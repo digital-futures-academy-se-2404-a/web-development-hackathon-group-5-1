@@ -1,0 +1,43 @@
+/**************************/
+/* BELOW 750px (Smaller Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .parent > div {
+    grid-area: unset;
+  }
+
+  .div1 {
+    grid-row: 2;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+
+  .div3 {
+    grid-row: 4;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+
+  .div5 {
+    grid-row: 6;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+
+  .div7 {
+    grid-row: 6;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+}
