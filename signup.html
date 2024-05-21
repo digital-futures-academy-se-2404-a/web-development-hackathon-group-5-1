@@ -19,17 +19,12 @@
         <link rel="stylesheet" href="./style.css">
     <script defer src="form-validator.js"></script>
     <style>
-      body {
-        margin-left: 100px;
-        margin-right: 100px;
-      }
       img {
-        height: 200px;
         width: 100%;
       }
       .image-holder {
-        max-width: 500px;
-        --bs-aspect-ratio: 50%;
+        max-width: 600px;
+        --bs-aspect-ratio: 40%;
       }
     </style>
   </head>
@@ -47,30 +42,24 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-6">
-          <div class="row justify-content-center mt-4">
-            <div class="image-holder ratio">
+        <div class="col-6 d-none d-lg-block">
+          <div class="row mb-4 image-holder ratio">
               <img
                 class="mx-auto d-block"
                 src="./images/sign-up-placeholders/img1.jpg"
               />
-            </div>
           </div>
-          <div class="row justify-content-center mt-4">
-            <div class="image-holder ratio">
+          <div class="row mb-4 image-holder ratio">
               <img
                 class="mx-auto d-block"
                 src="./images/sign-up-placeholders/img2.jpg"
               />
-            </div>
           </div>
-          <div class="row justify-content-center mt-4">
-            <div class="image-holder ratio">
+          <div class="row mb-4 image-holder ratio">
               <img
                 class="mx-auto d-block"
                 src="./images/sign-up-placeholders/img3.jpg"
               />
-            </div>
           </div>
         </div>
         <form class="col-6" novalidate>
@@ -129,7 +118,6 @@
 
           <input type="submit" class="btn btn-secondary" disabled />
         </form>
-      </div>
     </div>
   
     <footer class="bg-dark text-light py-4">
