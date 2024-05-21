@@ -38,22 +38,38 @@ const buttonToggler = () => {
 
 firstNameInput.addEventListener("change", (e) => {
   validateName("firstName", e.target.value);
-  tipMessageHandler("firstName", e.target, "Invalid name");
+  tipMessageHandler(
+    "firstName",
+    e.target,
+    "Invalid name. Only use letters and hyphens."
+  );
   buttonToggler();
 });
 lastNameInput.addEventListener("change", (e) => {
   validateName("lastName", e.target.value);
-  tipMessageHandler("lastName", e.target, "Invalid name");
+  tipMessageHandler(
+    "lastName",
+    e.target,
+    "Invalid name. Only use letters and hyphens."
+  );
   buttonToggler();
 });
 emailInput.addEventListener("change", (e) => {
   validateEmail(e.target.value);
-  tipMessageHandler("email", e.target, "Invalid Email");
+  tipMessageHandler(
+    "email",
+    e.target,
+    "Invalid email. Please enter a valid email address."
+  );
   buttonToggler();
 });
 phoneInput.addEventListener("change", (e) => {
   validatePhone(e.target.value);
-  tipMessageHandler("phone", e.target, "Invalid Phone Number");
+  tipMessageHandler(
+    "phone",
+    e.target,
+    "Invalid phone number. Please enter a valid phone number starting with 0 or +."
+  );
   buttonToggler();
 });
 
@@ -69,8 +85,11 @@ const tipMessageHandler = (field, htmlTarget, message) => {
   const exitingTip = htmlTarget.parentNode.querySelector(".error");
   if (exitingTip) {
     exitingTip.remove();
+    htmlTarget.style.borderColor = "rgb(0, 128, 0)";
   }
+
   if (!formValidity[field]) {
+    htmlTarget.style.borderColor = "rgb(255, 0, 0)";
     const tip = createTipMessage(message);
     htmlTarget.parentNode.appendChild(tip);
   }
