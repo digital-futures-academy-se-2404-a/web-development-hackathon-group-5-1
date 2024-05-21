@@ -1,11 +1,16 @@
 .card.mb-3 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .card-body {
   border: 1px solid black;
   padding: 10px;
+}
+
+.img-fluid.rounded-start {
+  height: 200px;
+  object-fit: cover;
 }
 
 .row.g-0 {
@@ -14,16 +19,17 @@
   align-items: stretch;
 }
 
-.image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.card-body {
+  border: 1px solid black;
+  padding: 10px;
+  height: 100%;
 }
 
-.image-container img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
+.img-fluid.rounded-start {
+  height: 100%;
   object-fit: cover;
+}
+
+.card-body .card-text {
+  font-size: calc(1vw + 1vh + .5vmin);
 }
