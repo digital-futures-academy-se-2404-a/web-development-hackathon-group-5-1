@@ -43,5 +43,19 @@ body {
 
 .card-body .card-text {
   font-size: calc(1vw + 1vh + .5vmin);
-  color: var(--color-dark-gray);
+  color: var(--color-gray);
+}
+
+form label {
+  color: var(--color-gray);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+form {
+  margin-top: 30px !important;
 }
