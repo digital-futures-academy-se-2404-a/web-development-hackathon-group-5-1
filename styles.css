@@ -208,3 +208,12 @@ footer {
   font-size: calc(1vw + 1vh + .5vmin);
   color: var(--color-dark-gray);
 }
+
+.image-holder {
+  max-width: 500px;
+  --bs-aspect-ratio: 40%;
+}
+
+#sign-up-form {
+  max-width: 500px;
+}
