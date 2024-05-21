@@ -1,17 +1,11 @@
 html {
   box-sizing: border-box;
 }
-.body {
-  width: 100vw;
-  height: 100vh;
-  font-family: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
-}
 .grid-img {
   object-fit: cover;
   width: 100%;
-  max-height: 13em;
-}
-.container {
+  height: 100%;
+  max-height: 22em;
 }
 
 .parent {
@@ -19,10 +13,10 @@ html {
   padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2em;
   grid-row-gap: 1em;
-  width: 80%;
+  width: 90%;
 }
 .div2,
 .div3,
@@ -33,7 +27,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px double black;
 }
 .div1 {
   grid-area: 1 / 1 / 2 / 4;
