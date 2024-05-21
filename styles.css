@@ -6,14 +6,15 @@
   --color-dark-red: #d90429;
 }
 
+body {
+  background-color: var(--color-dark-blue);
+}
+
+
 .card.mb-3 {
   margin-left: 5rem;
   margin-right: 5rem;
-}
-
-.card-body {
-  border: 1px solid black;
-  padding: 10px;
+  border: none;
 }
 
 .img-fluid.rounded-start {
@@ -25,12 +26,14 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  background-color: var(--color-dark-blue);
 }
 
 .card-body {
-  border: 1px solid black;
+  border: 5px solid var(--color-dark-red);
   padding: 10px;
   height: 100%;
+  background-color: var(--color-light-gray);
 }
 
 .img-fluid.rounded-start {
@@ -40,4 +43,5 @@
 
 .card-body .card-text {
   font-size: calc(1vw + 1vh + .5vmin);
+  color: var(--color-dark-gray);
 }
