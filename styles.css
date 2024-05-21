@@ -10,7 +10,6 @@ body {
   background-color: var(--color-dark-blue);
 }
 
-
 .card.mb-3 {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -44,4 +43,40 @@ body {
 .card-body .card-text {
   font-size: calc(1vw + 1vh + .5vmin);
   color: var(--color-dark-gray);
+}
+
+@media (max-width: 576px) {
+
+  .container,
+  .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .card.mb-3,
+  .card.mb-3 * {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .row>[class^='col-'] {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+form label {
+  color: var(--color-gray);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+form {
+  margin-top: 30px !important;
 }
