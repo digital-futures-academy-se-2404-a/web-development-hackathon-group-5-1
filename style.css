@@ -1,63 +1,90 @@
 * {
+
     box-sizing: border-box;
     
+
 }
 
 .sticky-navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #2B2D42;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #2b2d42;
 }
 
 .navbar-nav {
-    position: sticky;
-    width: 100%;
-    max-height: 20%;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 40%;
-    padding: 0px 40px;
+  position: sticky;
+  width: 100%;
+  max-height: 20%;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 40%;
+  padding: 0px 40px;
 }
- .nav-item {
-    background-color: #8D99AE;
+.nav-item {
+  background-color: #8d99ae;
+  flex: 1;
+  text-align: center;
+  padding: 0px;
+  margin: 10px;
+  min-width: 150px;
+  border-radius: 50px;
+  box-shadow: 0 0 3px #2b2d42;
+}
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .nav-item {
     flex: 1;
     text-align: center;
     padding: 0px;
     margin: 10px;
-    min-width: 150px;
-    border-radius: 50px;
-    box-shadow: 0 0 3px #2B2D42;
- }
- @media (max-width: 576px) {
-     .navbar-nav {
-         flex-direction: row;
-         justify-content: space-around;
-         width: 100%;
-     }
-
-     .nav-item {
-         flex: 1;
-         text-align: center;
-         padding:0px;
-         margin: 10px;
-         min-width: 100px;
-     }
- }
+    min-width: 100px;
+  }
+}
 .navbar-nav a:link,
 .navbar-nav a:visited {
-    color: #EDF2F4;
+  color: #edf2f4;
 }
- .navbar-nav a:hover {
-    background-color: #EF233C;
-    border-radius: 50px;
-    font-weight: bold;
-    color: #EDF2F4;
- }
- a:link , a:visited{
-    color: #EDF2F4;
- }
+.navbar-nav a:hover {
+  background-color: #ef233c;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #edf2f4;
+}
+a:link,
+a:visited {
+  color: #edf2f4;
+}
 
+
+/* Custom footer styles */
+footer {
+  margin-top: 20px;
+}
+
+.footer-content .socials a {
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.footer-content .socials a:hover {
+  color: #007bff;
+  /* Bootstrap primary color or any color you prefer */
+}
+
+.error {
+  color: rgb(255, 0, 0);
+}
+
+input {
+  border-radius: 5px;
+  border: 1.5px solid #8d99ae;
+}
 
 
 /* Custom footer styles */
