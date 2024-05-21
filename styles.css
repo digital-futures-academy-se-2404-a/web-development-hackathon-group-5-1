@@ -1,3 +1,11 @@
+:root {
+  --color-dark-blue: #2b2d42;
+  --color-gray: #8d99ae;
+  --color-light-gray: #edf2f4;
+  --color-bright-red: #ef233c;
+  --color-dark-red: #d90429;
+}
+
 .card.mb-3 {
   margin-left: 5rem;
   margin-right: 5rem;
