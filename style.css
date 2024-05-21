@@ -2,7 +2,15 @@
     box-sizing: border-box;
 }
 
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #2B2D42;
+}
+
 .navbar-nav {
+    position: sticky;
     width: 100%;
     max-height: 20%;
     flex-direction: row;
@@ -11,14 +19,14 @@
     padding: 0px 40px;
 }
  .nav-item {
-    background-color: lightgrey;
+    background-color: #8D99AE;
     flex: 1;
     text-align: center;
     padding: 0px;
     margin: 10px;
     min-width: 150px;
     border-radius: 50px;
-    
+    box-shadow: 0 0 3px #2B2D42;
  }
  @media (max-width: 576px) {
      .navbar-nav {
@@ -37,16 +45,16 @@
  }
 .navbar-nav a:link,
 .navbar-nav a:visited {
-    color: white;
+    color: #EDF2F4;
 }
  .navbar-nav a:hover {
-    background-color: darkgray;
+    background-color: #EF233C;
     border-radius: 50px;
     font-weight: bold;
-    color: white;
+    color: #EDF2F4;
  }
  a:link , a:visited{
-    color: white;
+    color: #EDF2F4;
  }
 
 
