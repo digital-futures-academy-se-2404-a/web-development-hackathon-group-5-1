@@ -66,3 +66,17 @@ body {
     padding-right: 0px;
   }
 }
+
+form label {
+  color: var(--color-gray);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+form {
+  margin-top: 30px !important;
+}
