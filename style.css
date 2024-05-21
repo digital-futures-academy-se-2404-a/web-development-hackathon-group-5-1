@@ -58,18 +58,39 @@
  }
 
 
- 
+
 /* Custom footer styles */
 footer {
     margin-top: 20px;
+    background: #2B2D42;
+    /* Dark Blue for the footer background */
+    color: #EDF2F4;
+    /* Very Light Blue for the text color */
 }
 
 .footer-content .socials a {
     font-size: 24px;
     transition: color 0.3s ease;
+    color: #EF233C;
+    /* Very Light Blue for the social icons */
 }
 
 .footer-content .socials a:hover {
-    color: #007bff;
-    /* Bootstrap primary color or any color you prefer */
+    color: #EF233C;
+    /* Red for the social icons on hover */
+}
+
+.bg-secondary {
+    background: #8D99AE !important;
+    /* Light Blue for the secondary background */
+}
+
+.text-light {
+    color: #EDF2F4 !important;
+    /* Very Light Blue for light text */
+}
+
+.text-dark {
+    color: #2B2D42 !important;
+    /* Dark Blue for dark text */
 }
