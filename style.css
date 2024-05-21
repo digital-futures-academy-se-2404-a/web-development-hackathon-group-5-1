@@ -6,8 +6,9 @@
     width: 100%;
     max-height: 20%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 40%;
+    padding: 0px 40px;
 }
  .nav-item {
     background-color: lightgrey;
@@ -15,6 +16,8 @@
     text-align: center;
     padding: 0px;
     margin: 10px;
+    min-width: 150px;
+    border-radius: 50px;
     
  }
  @media (max-width: 576px) {
@@ -29,21 +32,24 @@
          text-align: center;
          padding:0px;
          margin: 10px;
+         min-width: 100px;
      }
  }
-
- a:link {
-    color: black;
- }
- a:visited {
+.navbar-nav a:link,
+.navbar-nav a:visited {
     color: white;
+}
+ .navbar-nav a:hover {
     background-color: darkgray;
+    border-radius: 50px;
     font-weight: bold;
+    color: white;
  }
- a:hover {
-    color: pink;
-    background-color: grey;
+ a:link , a:visited{
+    color: white;
  }
+
+
  
 /* Custom footer styles */
 footer {
