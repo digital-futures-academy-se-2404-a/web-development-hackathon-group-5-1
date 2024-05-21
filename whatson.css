@@ -2,14 +2,13 @@ html {
   box-sizing: border-box;
 }
 .body {
-  width: 100vw;
-  height: 100vh;
   font-family: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
 }
 .grid-img {
   object-fit: cover;
   width: 100%;
-  max-height: 13em;
+  height: 100%;
+  max-height: 22em;
 }
 .container {
 }
@@ -20,7 +19,7 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 2em;
   grid-row-gap: 1em;
   width: 80%;
 }
