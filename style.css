@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-height: 50px;
+}
+nav ul {
+    width: 100%;
+}
+ nav li {
+    background-color: lightgrey;
+    padding: 10px 20px;
+    border-radius: 10%;
+ }
+
+ a:link {
+    color: black;
+ }
+ a:visited {
+    color: white;
+    background-color: darkgray;
+    font-weight: bold;
+ }
+ a:hover {
+    color: pink;
+    background-color: grey;
+ }
