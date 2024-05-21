@@ -28,3 +28,17 @@ nav ul {
     color: pink;
     background-color: grey;
  }
+/* Custom footer styles */
+footer {
+    margin-top: 20px;
+}
+
+.footer-content .socials a {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-content .socials a:hover {
+    color: #007bff;
+    /* Bootstrap primary color or any color you prefer */
+}
