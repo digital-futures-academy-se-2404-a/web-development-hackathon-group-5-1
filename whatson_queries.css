@@ -13,6 +13,6 @@
     grid-template-rows: unset;
   }
   .parent > div {
-    grid-area: unset;
+    grid-column: unset;
   }
 }
