@@ -199,6 +199,16 @@ footer {
   background-color: var(--color-light-gray);
 }
 
+#cbleft {
+  margin-left: 2rem;
+
+}
+
+#cbright {
+  margin-right: 2rem;
+
+}
+
 .img-fluid.rounded-start {
   height: 100%;
   object-fit: cover;
